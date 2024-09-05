@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; // Allow wrapping on smaller screens
+    gap: 20px; // Space between elements
+    margin: 20px;
+
+    @media (max-width: 768px) {
+        flex-direction: column; // Stack elements vertically on smaller screens
+        align-items: flex-start; // Align items to the start of the container
+    }
+
+    @media (max-width: 480px) {
+        gap: 10px; // Reduce gap on very small screens
+    }
+}
+
+.controls {
+    @media (max-width: 768px) {
+        width: 100%; // Full width on smaller screens
+        justify-content: space-between; // Space out the controls
+    }
+
+    @media (max-width: 480px) {
+        gap: 10px; // Reduce gap on very small screens
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

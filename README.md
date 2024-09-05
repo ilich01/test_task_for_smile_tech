@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Веб-приложение для списка пользователей
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание
 
-## Available Scripts
+Это веб-приложение отображает список пользователей с возможностями сортировки и фильтрации. Данные о пользователях загружаются из API JSONPlaceholder и предоставляют адаптивный интерфейс, подходящий для различных размеров экрана.
 
-In the project directory, you can run:
+## Функции
 
-### `npm start`
+- **Список пользователей**: Отображает список пользователей с их именем, электронной почтой, адресом и компанией.
+- **Сортировка**: Сортировка пользователей по имени компании в порядке возрастания или убывания.
+- **Фильтрация**: Фильтрация пользователей по имени.
+- **Обновление**: Получение новых случайных пользователей из API.
+- **Адаптивный дизайн**: Адаптируется под разные размеры экрана (десктоп, планшет, мобильный телефон).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Технологии
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **TypeScript**: Для обеспечения типобезопасности и улучшения работы разработчика.
+- **React**: Для построения пользовательского интерфейса.
+- **SCSS**: Для стилизации с использованием модульного подхода.
+- **Axios**: Для выполнения запросов к API.
+- **JSONPlaceholder API**: Предоставляет макетные данные пользователей.
 
-### `npm test`
+## Быстрый старт
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Предварительные требования
 
-### `npm run build`
+- Node.js (>= 14.x)
+- npm (>= 6.x) или Yarn (>= 1.x)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Установка
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Клонируйте репозиторий:
+    ```bash
+   git clone https://github.com/yourusername/user-list-app.git
+2. Перейдите в директорию проекта
+    ```bash
+    cd: test-task
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Установите зависимости:
+   ```bash
+    pnpm install 
+    
+    или
 
-### `npm run eject`
+    npm install 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Запуск приложения
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    1. Запустите сервер разработки:
+    ```bash
+    pnpm start
+или, если вы используете Yarn:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Копировать код
+yarn start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    1. Запустите сервер разработки:
+    
+    ```bash
+    pnpm start
 
-## Learn More
+    2. Откройте ваш браузер и перейдите на http://localhost:3000, чтобы увидеть приложение в действии.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Структура проекта
+    Проект создан с помошью create-react-app.
+    src: Содержит исходный код приложения.
+    components: Переиспользуемые React-компоненты.
+    styles: SCSS-файлы для стилизации.
+    types: Определения типов TypeScript.
+    App.tsx: Основной компонент приложения.
+    index.tsx: Точка входа в приложение.
+    public: Статические ресурсы, такие как изображения и фавикон.
+    package.json: Метаданные проекта и зависимости.
+    tsconfig.json: Конфигурация TypeScript.
+    README.md: Этот файл с информацией о проекте и инструкциями по его запуску.

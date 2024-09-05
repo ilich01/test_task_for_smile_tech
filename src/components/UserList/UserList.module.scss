@@ -1,0 +1,109 @@
+.tableContainer {
+    overflow-x: auto;
+}
+
+.userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+
+    th, td {
+        padding: 12px;
+    }
+
+    th {
+        background-color: #F9FAFE;
+        text-align: left;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+
+        th, td {
+            padding: 8px;
+        }
+
+        tr:nth-of-type(odd) {
+            background-color: #f9f9f9; // Light grey for odd rows
+        }
+
+        tr:nth-of-type(even) {
+            background-color: #f0f0f0; // Slightly darker grey for even rows
+        }
+    }
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+
+        th, td {
+            padding: 6px;
+        }
+
+        th, td {
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        tr {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        td::before {
+            content: attr(data-label); 
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        tr:nth-of-type(odd) {
+            background-color: #f9f9f9; // Light grey for odd rows
+        }
+
+        tr:nth-of-type(even) {
+            background-color: #f0f0f0; // Slightly darker grey for even rows
+        }
+    }
+}
+
+.noUsers {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.email, .address {
+    color: #2A7BE4;
+}
+
+.sortable, .email, .address {
+    cursor: pointer;
+}
+
+.addressStreet {
+    background-color: #F68F57;
+    width: fit-content;
+    height: 23px;
+    padding: 4px 8px;
+    gap: 8px;
+    border-radius: 3px 0 0 0;
+    display: inline-block;
+    color: #fff;
+}
+
+.addressZipcode {
+    background-color: #F9D1D8;
+    width: 68px;
+    height: 23px;
+    padding: 4px 8px;
+    border-radius: 3px 0 0 0;
+    color: #932338;
+    line-height: 40px;
+}
