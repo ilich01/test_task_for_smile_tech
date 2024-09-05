@@ -1,0 +1,1 @@
+# test_task_for_smile_tech
